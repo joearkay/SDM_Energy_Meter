@@ -1,4 +1,17 @@
-Template library for reading SDM120 / SDM220 / SDM630 Modbus Energy meters.
+# Template library for reading SDM120 / SDM220 / SDM630 Modbus Energy meters.
+
+
+## Updated codebase by JRK to demonstrate usage on an Arduino Uno. 
+
+**Master Branch (The one you are on now):**
+Original codebase modified and updated to work on the Arduino Microcontroller Platform (tested on Arduino Uno).
+This includes `SDM_Energy_Meter\examples\sdm_simple` which is an example that demonstrates the reading of all variables from a SDM120 device. For wiring diagram, please see the `Arduino_Wiring_Diagram_SDM120.jpg` in the main folder. 
+
+**Particle Branch:**
+Codebase developed for Particle Electron/Photon, ported from Arduino modified codebase (from original). 
+
+### Original readme.md from contributor (Reaper7):
+
 
 Reading via Hardware Serial or Software Serial (library https://github.com/plerup/espsoftwareserial)<br>
 and rs232<->rs485 converter with automatic flow direction control (look at hardware_sdm220.jpg)<br>
