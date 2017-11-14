@@ -41,9 +41,9 @@
 #define SDM120C_REACTIVE_APPARENT_POWER     0x0018                              //VAR
 #define SDM120C_POWER_FACTOR                0x001E                              //
 #define SDM120C_FREQUENCY                   0x0046                              //Hz
-#define SDM120C_IMPORT_ACTIVE_ENERGY        0x0048                              //Wh
-#define SDM120C_EXPORT_ACTIVE_ENERGY        0x004A                              //Wh
-#define SDM120C_TOTAL_ACTIVE_ENERGY         0x0156                              //Wh
+#define SDM120C_IMPORT_ACTIVE_ENERGY        0x0048                              //kWh
+#define SDM120C_EXPORT_ACTIVE_ENERGY        0x004A                              //kWh
+#define SDM120C_TOTAL_ACTIVE_ENERGY         0x0156                              //kWh
 //SDM 220 registers
 #define SDM220T_VOLTAGE                     0x0000                              //V
 #define SDM220T_CURRENT                     0x0006                              //A
@@ -116,7 +116,8 @@ template <long _speed = SDM_BAUD, int _dere_pin = DERE_PIN, bool _swapuart = SWA
 struct SDM {
 
 #if !defined ( USE_HARDWARESERIAL )
-  SoftwareSerial sdmSer = SoftwareSerial(_rx_pin, _tx_pin, false, 32);
+  //SoftwareSerial sdmSer = SoftwareSerial(_rx_pin, _tx_pin, false, 32); //this would not compile on Arduino 
+  SoftwareSerial sdmSer = SoftwareSerial(_rx_pin, _tx_pin); //Replaced with standard SoftwareSerial definition 
 #else
   HardwareSerial sdmSer = HardwareSerial(0);
 #endif
