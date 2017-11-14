@@ -37,26 +37,62 @@ void loop() {
   //Serial.print(bufout);
 
   Serial.print("Voltage:   ");
-  Serial.print(sdm.readVal(SDM220T_VOLTAGE), 2);                                //display voltage
+  Serial.print(sdm.readVal(SDM120C_VOLTAGE), 2);                                //display voltage
   Serial.println("V");
   
   delay(50);
 
   Serial.print("Current:   ");
-  Serial.print(sdm.readVal(SDM220T_CURRENT), 2);                                //display current  
+  Serial.print(sdm.readVal(SDM120C_CURRENT), 2);                                //display current  
   Serial.println("A");
 
   delay(50);
 
   Serial.print("Power:     ");
-  Serial.print(sdm.readVal(SDM220T_POWER), 2);                                  //display power
+  Serial.print(sdm.readVal(SDM120C_POWER), 2);                                  //display power
   Serial.println("W");
 
   delay(50);
 
+  Serial.print("Active Apparent Power: ");
+  Serial.print(sdm.readVal(SDM120C_ACTIVE_APPARENT_POWER), 2);                      
+  Serial.println("VA"); 
+
+  delay(50);
+
+  Serial.print("Reactive Apparent Power: ");
+  Serial.print(sdm.readVal(SDM120C_REACTIVE_APPARENT_POWER), 2);                           
+  Serial.println("VAR"); 
+
+  delay(50);
+  
+  Serial.print("Power Factor: ");
+  Serial.print(sdm.readVal(SDM120C_POWER_FACTOR), 2);                      
+  Serial.println("");  
+
+  delay(50);
+
   Serial.print("Frequency: ");
-  Serial.print(sdm.readVal(SDM220T_FREQUENCY), 2);                              //display frequency
+  Serial.print(sdm.readVal(SDM120C_FREQUENCY), 2);                              //display frequency
   Serial.println("Hz");   
+
+  delay(50);
+  
+  Serial.print("Import Active Energy: ");
+  Serial.print(sdm.readVal(SDM120C_IMPORT_ACTIVE_ENERGY), 2);                      
+  Serial.println("kWh"); 
+
+   delay(50);
+  
+  Serial.print("Export Active Energy: ");
+  Serial.print(sdm.readVal(SDM120C_EXPORT_ACTIVE_ENERGY), 2);                      
+  Serial.println("kWh");
+
+  delay(50);
+  
+  Serial.print("Total Active Energy: ");
+  Serial.print(sdm.readVal(SDM120C_TOTAL_ACTIVE_ENERGY), 2);                      
+  Serial.println("kWh");
 
   delay(1000);                                                                  //wait a while before next loop
 }

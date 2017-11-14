@@ -41,9 +41,9 @@
 #define SDM120C_REACTIVE_APPARENT_POWER     0x0018                              //VAR
 #define SDM120C_POWER_FACTOR                0x001E                              //
 #define SDM120C_FREQUENCY                   0x0046                              //Hz
-#define SDM120C_IMPORT_ACTIVE_ENERGY        0x0048                              //Wh
-#define SDM120C_EXPORT_ACTIVE_ENERGY        0x004A                              //Wh
-#define SDM120C_TOTAL_ACTIVE_ENERGY         0x0156                              //Wh
+#define SDM120C_IMPORT_ACTIVE_ENERGY        0x0048                              //kWh
+#define SDM120C_EXPORT_ACTIVE_ENERGY        0x004A                              //kWh
+#define SDM120C_TOTAL_ACTIVE_ENERGY         0x0156                              //kWh
 //SDM 220 registers
 #define SDM220T_VOLTAGE                     0x0000                              //V
 #define SDM220T_CURRENT                     0x0006                              //A
