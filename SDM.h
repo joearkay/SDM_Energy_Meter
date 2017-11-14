@@ -116,7 +116,8 @@ template <long _speed = SDM_BAUD, int _dere_pin = DERE_PIN, bool _swapuart = SWA
 struct SDM {
 
 #if !defined ( USE_HARDWARESERIAL )
-  SoftwareSerial sdmSer = SoftwareSerial(_rx_pin, _tx_pin, false, 32);
+  //SoftwareSerial sdmSer = SoftwareSerial(_rx_pin, _tx_pin, false, 32); //this would not compile on Arduino 
+  SoftwareSerial sdmSer = SoftwareSerial(_rx_pin, _tx_pin); //Replaced with standard SoftwareSerial definition 
 #else
   HardwareSerial sdmSer = HardwareSerial(0);
 #endif
