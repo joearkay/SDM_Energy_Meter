@@ -8,7 +8,7 @@ Original codebase modified and updated to work on the Arduino Microcontroller Pl
 This includes `SDM_Energy_Meter\examples\sdm_simple` which is an example that demonstrates the reading of all variables from a SDM120 device. For wiring diagram, please see the `Arduino_Wiring_Diagram_SDM120.jpg` in the main folder. 
 
 **Particle Branch (The one you are on now):**
-Codebase developed for Particle Electron/Photon, ported from Arduino modified codebase (from original). For a wiring diagram, please see the `Particle_Wiring_Diagram_SDM120.jpg` in the main folder. 
+Codebase developed for Particle Electron/Photon, ported from Arduino modified codebase (from original). This includes `sdm_simple` which is an example that demonstrates the reading of all variables from a SDM120 device. For a wiring diagram, please see the `Particle_Wiring_Diagram_SDM120.jpg` in the main folder. 
 
 ### Original readme.md from contributor (Reaper7):
 
