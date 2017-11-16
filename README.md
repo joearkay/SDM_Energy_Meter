@@ -3,11 +3,11 @@
 
 ## Updated codebase by JRK to demonstrate usage on an Arduino Uno. 
 
-**Master Branch (The one you are on now):**
+**Master Branch:**
 Original codebase modified and updated to work on the Arduino Microcontroller Platform (tested on Arduino Uno).
 This includes `SDM_Energy_Meter\examples\sdm_simple` which is an example that demonstrates the reading of all variables from a SDM120 device. For wiring diagram, please see the `Arduino_Wiring_Diagram_SDM120.jpg` in the main folder. 
 
-**Particle Branch:**
+**Particle Branch (The one you are on now):**
 Codebase developed for Particle Electron/Photon, ported from Arduino modified codebase (from original). 
 
 ### Original readme.md from contributor (Reaper7):
